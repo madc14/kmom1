@@ -35,3 +35,19 @@ spl_autoload_register('myAutoloader');
 function dump($array) {
   return "<pre>" . htmlentities(print_r($array, 1)) . "</pre>";
 }
+
+/* Function for modifying date output */
+function showDate($dated) // for the DATETIME format
+
+{
+    $hour = substr($dated, 11, 2);
+    $minute = substr($dated, 14, 2);
+    $second = substr($dated, 17, 2);
+    $month = substr($dated, 5, 2);
+    $day = substr($dated, 8, 2);
+    $year = substr($dated, 0, 4);
+    $mktime = mktime($year, $month, $day, $hour, $minute);
+    //$formatted = date("F j, Y g:i a",$mktime);
+    $formatted = $day . "/" . $month . " - " . $hour . ":" . $minute;
+    return $formatted;
+}

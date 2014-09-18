@@ -1,57 +1,29 @@
 <?php
-/**
- * A CDice class to play around with a dice.
- *
- */
+/* Klassfil för klassen CDice */
 class CDice {
 
-  /**
-   * Properties
-   *
-   */
-  private $lastRoll = array();
+  private $faces;
 
-
-
-  /**
-   * Constructor
-   *
-   */
-  public function __construct() {
-    ;
-  }
-
-
-
-  /**
-   * Roll the dice
-   *
-   */
-  public function Roll($times) {
-    $this->lastRoll = array();
-    for($i = 0; $i < $times; $i++) {
-      $this->lastRoll[] = rand(1, 6);
+  /* Konstruktor */
+  public function __construct($faces=6) {
+      $this->faces = $faces;
     }
+
+  /* Medlemsvariabel för att spara kast */
+  private $rolls = array();
+
+  /* Metod för att kasta tärningar, och returnera resultatet */
+
+  public function RollDice($times) {
+    for($i = 0; $i < $times; $i++) {
+        $this->rolls[] = rand(1, $this->faces);
+    }
+
+    return $this->GetTotal();
   }
 
-
-
-  /**
-   * Get the array that contains the last roll(s).
-   *
-   */
-  public function GetResults() {
-    return $this->lastRoll;
-  }
-
-
-
-  /**
-   * Get the total from the last roll(s).
-   *
-   */
+  /* Returnerar den sammanslagna totalsumman av kast */
   public function GetTotal() {
-    return array_sum($this->lastRoll);
+    return array_sum($this->rolls);
   }
-
 }

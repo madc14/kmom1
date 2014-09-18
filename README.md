@@ -13,7 +13,14 @@ Read article about Anax here: http://dbwebb.se/kunskap/anax-en-hallbar-struktur-
 
 History
 -----------------------------------
-
+v2.0 (2014-09-17)
+* Updated for KMom2 with the game DiceGame
+* New classes: CDice, DiceGame, DBCon
+* New PHP-files: dicegame.php
+* Updated PHP-files: kmom2.php
+* New functions: showDate() in bootstrap.php
+* New CSS-files: dice.css
+* New Graphics: theme/css/img/ dice1-dice6.png
 
 v1.0 (2014-09-06)
 

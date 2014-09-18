@@ -1,0 +1,78 @@
+/* Dices for KMOM2 */
+@import url(http://fonts.googleapis.com/css?family=Luckiest+Guy);
+
+.dice1, .dice2, .dice3, .dice4, .dice5, .dice6 {
+	width: 132px; height: 147px; margin: 0 auto;
+}
+.dice1 { background-image:url("img/dice1.png"); }
+.dice2 { background-image:url("img/dice2.png"); }
+.dice3 { background-image:url("img/dice3.png"); }
+.dice4 { background-image:url("img/dice4.png"); }
+.dice5 { background-image:url("img/dice5.png"); }
+.dice6 { background-image:url("img/dice6.png"); }
+
+.dicebutton {
+	height: 42px;
+	padding: 4px 8px 4px 8px;
+	background-color: #F3714F;
+	border-radius: 4px;
+	color: #fff;
+	border:0;
+	margin-left: 10px;
+}
+.diceinput {
+	height: 36px;
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	width: 200px;
+	background-color: #F3714F;
+	border-radius: 4px;
+	border:0;
+	color: #fff;
+}
+#dicebuttons a {
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	padding: 4px;
+	padding-left: 1%;
+	padding-right: 3%;
+	width: 28%;
+	margin-right: 1%;
+	float: left;
+	background-color: #F3714F;
+	border-radius: 4px;
+	border:0;
+	color: #fff;
+	float:left; 
+	text-align: center;
+	text-decoration: none;
+}
+#highscoretable, #highscoretable h3 { font-family: "Luckiest Guy", Impact, sans-serif; text-align: center;}
+#highscoretable  {
+	clear: both;
+	padding-top: 20px;
+	color: #F3714F;
+	font-size: 1.6em;
+	letter-spacing: 4px;
+}
+#highscoretable ul { padding: 0; }
+#highscoretable li { display: block; width: 100%; text-align: center; margin-bottom: 8px; }
+
+.dicethrow {
+	text-align: center;
+	color: #F3714F;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.diceplayer {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.dicehighscorereached {
+	color: #B13211;
+	font-style: italic;
+}
+.diceend { margin-right: 0!important; background-color: #E04E27!important; }
